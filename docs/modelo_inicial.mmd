@@ -15,6 +15,7 @@ classDiagram
 
     class OrdemCalibracao {
         -codigo: string
+        -data: string
         -status: string
         +abrir() void
         +fechar() void
@@ -26,6 +27,13 @@ classDiagram
         +assinarOrdem() void
     }
 
+    class RegistroOperacional {
+        -dataHora: string
+        -descricao: string
+        +registrarEvento(descricao: string) void
+    }
+
     Equipamento <|-- SensorTemperatura
     Equipamento "1" o-- "0..*" OrdemCalibracao : possui
     OrdemCalibracao --> "1" Tecnico : atribuida
+    Equipamento "1" *-- "0..*" RegistroOperacional : registra
