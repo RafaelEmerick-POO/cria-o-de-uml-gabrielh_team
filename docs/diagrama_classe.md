@@ -77,7 +77,7 @@ Marque a trilha usada:
 
 ### Validacao Mermaid Live
 
-Link registrado na seção 2 deste documento.
+Link registrado na secao 2 deste documento.
 
 ### Execucao da implementacao em C++
 
@@ -85,3 +85,18 @@ Comando de compilacao:
 
 ```bash
 g++ -std=c++17 -Wall -Wextra -O2 src_cpp/main.cpp src_cpp/equipamento.cpp src_cpp/sensor_temperatura.cpp -o build/laboratorio.exe
+```
+
+Comando de execucao:
+
+```bash
+./build/laboratorio.exe
+```
+
+Saida obtida:
+
+```txt
+[Equipamento] EQ-01 - Agitador principal - ativo=sim
+[SensorTemperatura] TT-01 - valorAtual=23.5
+[SensorTemperatura] TT-01 - valorAtual=24.2
+```
