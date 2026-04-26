@@ -75,5 +75,13 @@ Marque a trilha usada:
 
 ## 6. Evidencias de execucao
 
-A validacao no Mermaid Live sera registrada na Issue 2.
-A execucao local da implementacao em C++ sera registrada na Issue 3.
+### Validacao Mermaid Live
+
+Link registrado na seção 2 deste documento.
+
+### Execucao da implementacao em C++
+
+Comando de compilacao:
+
+```bash
+g++ -std=c++17 -Wall -Wextra -O2 src_cpp/main.cpp src_cpp/equipamento.cpp src_cpp/sensor_temperatura.cpp -o build/laboratorio.exe
